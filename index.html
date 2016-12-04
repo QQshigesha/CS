@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html lang="en-us">
+
   <head>
     <meta charset="UTF-8">
-    <title>mucha.GitHub.io by QQshigesha</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+
+    <title>CS Course Structure</title>
   </head>
   
 
@@ -67,8 +64,27 @@ execution time binding, swapped back into any available location.
 
 
 
-<h3>8.4 Segmentation</h3>
-now, let's start!
+<h3>8.4 Memory Segmentation</h3>
+<ul>
+  <li>Basic Method (Programmer's view of a program.)</li>
+  We think of memory in multiple segments, each dedicated to a particular use, such as code, data, the stack, the heap, etc. Memory segmentation supports this view by providing 
+  <center>(segment number ( mapped to a segment base address ) ,  offset from the beginning of that segment.)</center>
+  <img src="images/segmentation.jpg"/>
+
+</ul>
+
+Segmentation permits the physical address space of a process to be non-contiguous. Paging is another memory-management scheme that offer these advantage. And more, avoid external fragmentation. Now, the logical address space is totally separated from the physical space. So, a process can have a address space even larger than the physical memory.
+
+<h3>8.5 Paging</h3>
+
+Paging: eliminates most of the problems of the other methods discussed previously, and is the predominant memory management technique used today. Paging is a memory management scheme that allows processes physical memory to be discontinuous, and which eliminates problems with fragmentation by allocating memory in equal sized blocks known as pages.
+<ul>
+  <li>Basic Method (pages --- frames)</li>
+  divide physical memory into a number of equal sized blocks called frames,  divide a programs logical memory space into blocks of the same size called pages.
+    
+    <img src="images/paging.jpg"/>
+
+</ul>
 
   
   </body>
