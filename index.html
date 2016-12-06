@@ -5,19 +5,21 @@
     <meta charset="UTF-8">
 
     <title>CS Course Structure</title>
+
+<link rel="stylesheet" type="text/css" href="stylefolder/mystyle.css">
+
+
   </head>
   
 
 
   <body>
 
-    <section class="page-header">
-      <h1 class="project-name">Operating System</h1>
-    </section>
+      <h1>Operating System</h1>
 
 
 
-<h3>Chap 8. Main Memory</h3>
+<h3 class="pinkgreen">Chap 8. Main Memory</h3>
 
 <h4>
  The difference between the compile time address binding and execution time (run time) address binding. 
@@ -25,8 +27,9 @@
 
 <p>
 The difference between load-time and run-time binding is that in run-time every time there is a memory lookup it goes through a "relocation register" which is like the base register and then you add an offset.
+<div class="pinkblue_background">In load-time binding it does the same thing but subsequent lookups don't require evaluation of this register. The addresses are set when it is first pulled into memory. Hence if the base address changes you need to re-load the whole process to fix up all the relocatable addresses.
+</div>
 
-In load-time binding it does the same thing but subsequent lookups don't require evaluation of this register. The addresses are set when it is first pulled into memory. Hence if the base address changes you need to re-load the whole process to fix up all the relocatable addresses.
 
 In the case of run-time, you can move the process around in physical memory and not need to worry about re-loading it to fix the mapping up because every time there is an access to memory it maps it then.
 
