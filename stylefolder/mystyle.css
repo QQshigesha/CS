@@ -1,11 +1,13 @@
-.pinkgreen{
+.pinkgreen_word{
 	color:#33FFAC;
 }
+
 
 
 .pinkblue_background{
 	background-color:#33DDFF;
 }
+
 
 
 body{
@@ -14,7 +16,4 @@ body{
 	background-size: 20%;
 	background-position: 777px 0px; 
 	background-attachment: local;
-
-
-
 }
